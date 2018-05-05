@@ -10,6 +10,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
     "babel-eslint": "^8.2.3",
@@ -29,4 +33,3 @@
     "webpack-serve": "^0.3.2"
   }
 }
-
