@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-serve --hot --config ./webpack.config.dev.js",
+    "start": "node ./server.js",
     "fmt": "prettier --write src/**/*.js",
     "lint": "eslint src/**/*.js"
   },
@@ -18,12 +18,14 @@
     "@babel/preset-react": "^7.0.0-beta.46",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^8.0.0-beta.2",
+    "connect-history-api-fallback": "^1.5.0",
     "dotenv-webpack": "^1.5.5",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "koa-connect": "^2.0.1",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
