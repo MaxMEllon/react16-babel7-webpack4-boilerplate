@@ -18,8 +18,8 @@ class App extends React.Component {
     return (
       <Counter
         count={this.props.count}
-        handleCountUp={this.handleCountUp.bind(this)}
-        handleCountDown={this.handleCountDown.bind(this)}
+        handleCountUp={this.props.countUp}
+        handleCountDown={this.props.countDown}
       />
     )
   }
