@@ -17,4 +17,4 @@ config.serve = {
   }
 }
 
-serve({ config })
+serve({}, { config })

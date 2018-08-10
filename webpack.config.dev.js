@@ -37,7 +37,6 @@ module.exports = {
     new Dotenv({ path: './.env' }),
     new webpack.NamedModulesPlugin(),
     new webpack.HashedModuleIdsPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
