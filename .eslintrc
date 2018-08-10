@@ -1,0 +1,63 @@
+{
+  "extends": ["eslint-config-airbnb", "prettier"],
+
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+
+  "plugins": [
+    "import",
+    "dependencies"
+  ],
+
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "callback-return": "error",
+    "class-methods-use-this": "off",
+    "comma-dangle": ["error", "always-multiline"],
+    "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
+    "constructor-super": "error",
+    "dependencies/case-sensitive": "error",
+    "dependencies/no-cycles": "error",
+    "dependencies/no-unresolved": "error",
+    "dot-location": ["error", "property"],
+    "generator-star-spacing": ["error", "after"],
+    "import/extensions": "off",
+    "linebreak-style": ["error", "unix"],
+    "max-len": ["error", 100],
+    "no-catch-shadow": "error",
+    "no-console": "error",
+    "no-implicit-globals": "error",
+    "no-invalid-this": "error",
+    "no-label-var": "error",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-path-concat": "error",
+    "no-plusplus": "off",
+    "no-shadow": ["error", { "allow": ["cb", "next", "req", "res", "err", "error"] }],
+    "no-this-before-super": "error",
+    "no-undef-init": "error",
+    "no-undefined": "error",
+    "no-unexpected-multiline": "error",
+    "no-unmodified-loop-condition": "error",
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-unused-vars": ["error", { "args": "none" }],
+    "no-use-before-define": ["error", "nofunc"],
+    "no-useless-call": "error",
+    "no-void": "off",
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+    "prefer-destructuring": "off",
+    "prefer-spread": "error",
+    "prefer-template": "off",
+    "react/jsx-filename-extension": "off",
+  }
+}
