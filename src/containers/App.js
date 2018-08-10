@@ -5,24 +5,14 @@ import { connect } from "react-redux";
 import { countUp, countDown } from "../modules/redux/counts";
 import Counter from "../components/Counter";
 
-class App extends React.Component {
-  handleCountUp() {
-    this.props.countUp();
-  }
-
-  handleCountDown() {
-    this.props.countDown();
-  }
-
-  render() {
-    return (
-      <Counter
-        counts={this.props.counts}
-        handleCountUp={this.props.countUp}
-        handleCountDown={this.props.countDown}
-      />
-    );
-  }
+function App({ counts, countUp, countDown }) {
+  return (
+    <Counter
+      counts={counts}
+      handleCountUp={countUp}
+      handleCountDown={countDown}
+    />
+  );
 }
 
 const mapStateToProps = (state) => ({
