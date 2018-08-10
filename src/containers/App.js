@@ -2,7 +2,7 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 import { connect } from 'react-redux'
 
-import { countUp, countDown } from '../actions'
+import { countUp, countDown } from '../modules/redux/counts'
 import Counter from '../components/Counter'
 
 class App extends React.Component {
@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <Counter
-        count={this.props.count}
+        counts={this.props.counts}
         handleCountUp={this.props.countUp}
         handleCountDown={this.props.countDown}
       />
@@ -26,7 +26,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  count: state.count
+  counts: state.counts
 })
 
 const mapDispatchToActions = {
