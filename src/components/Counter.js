@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function Counter(props) {
-  const { counts, handleCountUp, handleCountDown } = props;
+export default function Counter({ counts, handleCountUp, handleCountDown }) {
   return (
     <React.Fragment>
       <div>
