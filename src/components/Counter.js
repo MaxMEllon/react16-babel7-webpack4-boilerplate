@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Counter({ counts, handleCountUp, handleCountDown }) {
+type Props = {
+  counts: number,
+  handleCountUp: () => void,
+  handleCountDown: () => void,
+}
+
+export default function Counter({ counts, handleCountUp, handleCountDown }: Props) {
   return (
     <React.Fragment>
       <div>

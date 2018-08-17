@@ -1,3 +1,5 @@
+// @flow
+
 import React from "react";
 import { hot } from "react-hot-loader";
 import { connect } from "react-redux";
@@ -5,12 +7,18 @@ import { connect } from "react-redux";
 import { countUp, countDown } from "../modules/redux/counts";
 import Counter from "../components/Counter";
 
-function App({ counts, countUp, countDown }) {
+type Props = {
+  counts: number,
+  handleCountUp: () => void,
+  handleCountDown: () => void,
+}
+
+function App({ counts, handleCountUp, handleCountDown }: Props) {
   return (
     <Counter
       counts={counts}
-      handleCountUp={countUp}
-      handleCountDown={countDown}
+      handleCountUp={handleCountUp}
+      handleCountDown={handleCountDown}
     />
   );
 }
@@ -20,8 +28,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToActions = {
-  countUp,
-  countDown,
+  handleCountUp: countUp,
+  handleCountDown: countDown,
 };
 
 export default App

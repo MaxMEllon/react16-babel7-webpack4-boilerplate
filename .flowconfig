@@ -1,0 +1,14 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+deprecated-call-syntax=off
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+module.file_ext=.js
+
+[strict]
