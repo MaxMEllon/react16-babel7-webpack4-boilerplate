@@ -1,4 +1,6 @@
-import React from "react";
+// @flow
+
+import React, { Fragment } from "react";
 
 type Props = {
   counts: number,
@@ -8,7 +10,7 @@ type Props = {
 
 export default function Counter({ counts, handleCountUp, handleCountDown }: Props) {
   return (
-    <React.Fragment>
+    <Fragment>
       <div>
         {counts}
       </div>
@@ -18,6 +20,6 @@ export default function Counter({ counts, handleCountUp, handleCountDown }: Prop
       <button type="button" onClick={handleCountDown}>
         countDown
       </button>
-    </React.Fragment>
+    </Fragment>
   );
 }

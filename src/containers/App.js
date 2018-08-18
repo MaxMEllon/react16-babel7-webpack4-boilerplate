@@ -32,9 +32,6 @@ const mapDispatchToActions = {
   handleCountDown: countDown,
 };
 
-export default App
-  |> connect(
-    mapStateToProps,
-    mapDispatchToActions
-  )
-  |> hot(module);
+const EnhancedApp = connect(mapStateToProps, mapDispatchToActions)(App)
+
+export default hot(module)(EnhancedApp)
